@@ -23,7 +23,7 @@
             <tr>
                 <td>2</td>
                 <td>David Doorn Balawen</td>
-                <td><a href="{{ asset('cv/maria.pdf') }}" target="_blank" class="btn btn-primary btn-sm">View CV</a></td>
+                <td><a href="{{ asset('https://yujin0012.github.io/resume/') }}" target="_blank" class="btn btn-primary btn-sm">View CV</a></td>
             </tr>
             <tr>
                 <td>3</td>
