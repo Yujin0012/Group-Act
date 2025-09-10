@@ -10,7 +10,10 @@
             <tr>
                 <th>#</th>
                 <th>Name</th>
+
                 <th>CV</th>
+                <th>View</th>
+
                 <th>Update/Delete</th>
             </tr>
         </thead>
@@ -18,7 +21,7 @@
             <tr>
                 <td>1</td>
                 <td>Carl Bien Andrei Lardizabal</td>
-                <td><a href="{{ asset('https://carlbienandreilardizabal-spec.github.io/MyPortfolio/') }}" target="_blank" class="btn btn-primary btn-sm">View CV</a></td>
+                <td><a href="{{ route('cv') }}" target="_blank" class="btn btn-primary btn-sm">View CV</a></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -30,6 +33,7 @@
                 <td>Jean Nica Tanudtanud</td>
                 <td><a href="{{ asset('cv/john.pdf') }}" target="_blank" class="btn btn-primary btn-sm">View CV</a></td>
             </tr>
+
         </tbody>
     </table>
 @endsection

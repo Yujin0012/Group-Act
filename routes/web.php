@@ -13,3 +13,10 @@ Route::get('/index', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+<<<<<<< HEAD
+=======
+
+Route::get('/cv', function () {
+    return view('person1');
+})->name('cv');
+>>>>>>> 9880af7 (updated)

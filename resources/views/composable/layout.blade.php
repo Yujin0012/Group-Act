@@ -1,15 +1,20 @@
+<<<<<<< HEAD
+=======
+<!-- layout.blade.php -->
+>>>>>>> 9880af7 (updated)
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>@yield('title', 'Student Dashboard')</title>
-    <!-- Bootstrap 5 CDN -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    @stack('styles')
 </head>
 <body class="bg-light">
+    <!-- Navbar -->
 
-    <!-- ✅ Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">ALT F4 Group</a>
@@ -20,21 +25,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="{{ route('index') }}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('about') }}">About</a>
-            </li>
+
+            <li class="nav-item"><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
+
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- ✅ Main content -->
-    <div class="container mt-5">
+
+    <!-- ✅ Content wrapper -->
+    <main class="@yield('containerClass', 'container mt-5')">
         @yield('content')
-    </div>
+    </main>
+
 
 </body>
 </html>
